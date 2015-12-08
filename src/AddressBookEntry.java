@@ -21,6 +21,7 @@ public class AddressBookEntry {
    private int addressID;
    private int phoneID;
    private int emailID;
+   private String adb_ID = "";
    
    // empty constructor
    public AddressBookEntry()
@@ -128,7 +129,7 @@ public class AddressBookEntry {
    {
       return emailAddress;
    }
-   
+
    // get person's ID
    public int getPersonID()
    {

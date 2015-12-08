@@ -35,6 +35,7 @@
       <column name="personID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="firstName" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
       <column name="lastName" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="adb_ID" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="personID"/>
       <exported-key name="fk_addresses" table="addresses" schema="" catalog="addressbook" columns="personID"/>
       <exported-key name="fk_emailAddresses" table="emailaddresses" schema="" catalog="addressbook" columns="personID"/>

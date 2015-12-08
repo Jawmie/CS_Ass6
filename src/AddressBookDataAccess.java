@@ -11,6 +11,8 @@ public interface AddressBookDataAccess {
    // Locate specified person by last name. Return 
    // AddressBookEntry containing information.
    public List<AddressBookEntry> findPerson( String lastName );
+
+   public String findADB();
    
    // Update information for specified person.
    // Return boolean indicating success or failure.

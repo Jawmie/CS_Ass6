@@ -35,8 +35,7 @@ public class AddressBookEntryFrame extends JInternalFrame {
       COUNTY = "Primary County", PHONE = "Primary Phone No.", EMAIL = "Primary Email",
       ADDRESS1_SEC = "Secondary Address1", ADDRESS2_SEC = "Secondary Address2",
       CITYORTOWN_SEC = "Secondary City/Town", COUNTY_SEC = "Secondary County",
-      PHONE_SEC = "Secondary Phone No.", EMAIL_SEC = "Secondary Email",
-      SEC_INFO1 = "Secondary Info", SEC_INFO2 = "Optional";
+      PHONE_SEC = "Secondary Phone No.", EMAIL_SEC = "Secondary Email";
   
    // construct GUI
    public AddressBookEntryFrame()
@@ -73,16 +72,10 @@ public class AddressBookEntryFrame extends JInternalFrame {
       createRow( COUNTY_SEC );//row13
       createRow( PHONE_SEC );//row14
       createRow( EMAIL_SEC );//row15
-      //leftPanel2.add(secondary);
-
-      //rightPanel2
-      //centerPanel.add( addSecondary );
       
       Container container = getContentPane();
       container.add( leftPanel, BorderLayout.WEST );
       container.add( rightPanel, BorderLayout.CENTER );
-      //container.add( newPanel, BorderLayout.CENTER );
-
      
       setBounds(xOffset, yOffset, 600, 400);
       xOffset = ( xOffset + 30 ) % 300;
@@ -121,17 +114,18 @@ public class AddressBookEntryFrame extends JInternalFrame {
       person.setLastName( getField( LAST_NAME ) );
       person.setAddress1( getField( ADDRESS1 ) );
       person.setAddress2( getField( ADDRESS2 ) );
-      person.setCityOrTown(getField( CITYORTOWN ) );
-      person.setCounty(getField( COUNTY ));
+      person.setCityOrTown( getField( CITYORTOWN ) );
+      person.setCounty( getField( COUNTY ) );
       person.setPhoneNumber( getField( PHONE ) );
       person.setEmailAddress( getField( EMAIL ) );
 
+
       //Secondary Stuff
       person.setAddress1_sec( getField( ADDRESS1_SEC ) );
-      person.setAddress2_sec(getField(ADDRESS2_SEC) );
+      person.setAddress2_sec( getField(ADDRESS2_SEC ) );
       person.setCityOrTown_sec( getField( CITYORTOWN_SEC ) );
       person.setCounty_sec( getField( COUNTY_SEC ) );
-      person.setPhoneNumber_sec(getField( PHONE_SEC ) );
+      person.setPhoneNumber_sec( getField( PHONE_SEC ) );
       person.setEmailAddress_sec( getField( EMAIL_SEC ) );
 
       return person;
